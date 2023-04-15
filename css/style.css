@@ -1,0 +1,222 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin: 16vw 0;
+}
+
+.btn {
+    border: 0;
+    border-radius: 1.2vw;
+}
+
+.btn-primary {
+    background-color: #F3B063;
+}
+ 
+.text-grey {
+    color: #FCFCFC;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #F3B063;
+    color: #F3B063;
+}
+
+.header {
+    background-image: url(../assets/img/background.png);
+    background-size: cover;
+}
+
+.navbar {
+        z-index: 0;
+        position: fixed;
+        top: 0;
+    }
+
+.bg-blue {
+    background-color: #0C3A63;
+}
+
+.bg-navbar {
+    background-color: #0C3A63;
+}
+
+.bg-login {
+    background-color: #F3B063;
+}
+
+.fa-solid.fa-bars {
+    color: #fafafa;
+}
+
+.featured-icon {
+    width: auto; 
+    height: 6vw;
+}
+
+.icon-back {
+    background-image: url('../assets/icon/back.svg');
+    background-size: cover;
+}
+
+.icon-next {
+    background-image: url('../assets/icon/next.svg');
+}
+
+.better-property-card {
+    z-index: 1;
+    position: relative;
+    top: -15vw;
+    right: -25vw;
+    width: 74%;
+}
+
+.user {
+    width: 12vw;
+}
+
+.carousel-indicators  [data-bs-target]{
+    background-color: black;
+}
+
+.carousel-indicators > button {
+    border-radius: 50%;
+    width: 1.6vw !important;
+    height: 1.6vw !important;
+}
+
+.contact-icon {
+    width: 6vw;
+}
+
+.contact-icon-title {
+    font-size: 1em;
+}
+
+.contact-icon-caption {
+    font-size: 0.6em;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .navbar {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-toggler {
+        color: transparent;
+    }
+
+    .navbar-collapse {
+        min-width: 110vw;
+        margin: 0 0 0 -2em;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+    .navbar {
+        z-index: 999;
+    }
+
+    .navbar-nav {
+        justify-content: end;
+    }
+
+    .navbar-collapse {
+        margin: 0;
+    }
+
+    .bg-navbar {
+        background-color: transparent;
+    }
+
+    li .login {
+        width: 100px;
+    }
+
+    .navigation {
+        justify-content: start;
+    }
+
+    .featured-icon {
+        height: 4vw;
+    }
+
+    .jumbotron-title {
+        font-size: 2.2em;
+    }
+
+    .jumbotron-caption {
+        font-size: 1em;
+    }
+
+    .home-img {
+        z-index: 1;
+        position: relative;
+        top: 10%;
+    }
+
+    .better-property-card {
+        top: -18vw;
+    }
+
+    .carousel-indicators > button {
+        border-radius: 50%;
+        width: 1vw !important;
+        height: 1vw !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .better-property-card {
+        width: 64%;
+        top: -15vw;
+        right: -35vw;
+    }
+
+    .user {
+        width: 8vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .featured-icon {
+        width: auto; 
+        height: 2vw;
+    }
+
+    .better-property-card {
+        z-index: 1;
+        position: relative;
+        top: -15vw;
+        right: -29vw;
+        width: 70%;
+    }
+
+    .jumbotron-title {
+        font-size: 3em;
+    }
+
+    .jumbotron-caption {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .better-property-card {
+        z-index: 1;
+        position: relative;
+        top: -15vw;
+        right: -38vw;
+        width: 60%;
+    }
+}
