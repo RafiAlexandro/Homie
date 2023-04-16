@@ -28,10 +28,11 @@ section {
 .header {
     background-image: url(../assets/img/background.png);
     background-size: cover;
+    background-position: top;
 }
 
-.navbar {
-        z-index: 0;
+.navigate {
+        z-index: 999;
         position: fixed;
         top: 0;
     }
@@ -196,9 +197,9 @@ section {
     .better-property-card {
         z-index: 1;
         position: relative;
-        top: -15vw;
-        right: -29vw;
-        width: 70%;
+        top: -12vw;
+        right: -39vw;
+        width: 60%;
     }
 
     .jumbotron-title {
@@ -208,15 +209,45 @@ section {
     .jumbotron-caption {
         font-size: 1.2em;
     }
+
+    .carousel-indicators > button {
+        width: 0.8vw !important;
+        height: 0.8vw !important;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    
+
     .better-property-card {
         z-index: 1;
         position: relative;
         top: -15vw;
-        right: -38vw;
-        width: 60%;
+        right: -44vw;
+        width: 54%;
+    }
+
+    .carousel-indicators > button {
+        width: 0.6vw !important;
+        height: 0.6vw !important;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    
+    section {
+        margin: 14vw 3vw;
+    }
+
+    .better-property-card {
+        z-index: 1;
+        position: relative;
+        top: -15vw;
+        right: -40vw;
+        width: 54%;
+    }
+
+    footer {
+        margin: 0 3vw;
     }
 }
