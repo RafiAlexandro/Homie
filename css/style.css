@@ -2,6 +2,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    width: auto;
+    height: auto;
+}
+
 section {
     margin: 16vw 0;
 }
@@ -11,8 +16,23 @@ section {
     border-radius: 1.2vw;
 }
 
+.btn:hover {
+    
+}
+
 .btn-primary {
     background-color: #F3B063;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #F3B063;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.btn-primary:active {
+    background-color: white !important;
 }
  
 .text-grey {
@@ -23,6 +43,14 @@ section {
     background-color: transparent;
     border: 1px solid #F3B063;
     color: #F3B063;
+    transition: 0.5s;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    border: 1px solid #F3B063;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
 }
 
 .header {
@@ -49,13 +77,30 @@ section {
     background-color: #F3B063;
 }
 
+.home-img {
+    opacity: 0;
+}
+
 .fa-solid.fa-bars {
     color: #fafafa;
+}
+
+#featured, #modern {
+    opacity: 0;
 }
 
 .featured-icon {
     width: auto; 
     height: 6vw;
+}
+
+.featured-img {
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.featured-img:hover {
+    filter: grayscale(0);
 }
 
 .icon-back {
@@ -133,10 +178,6 @@ section {
         margin: 0;
     }
 
-    .bg-navbar {
-        background-color: transparent;
-    }
-
     li .login {
         width: 100px;
     }
@@ -172,6 +213,7 @@ section {
         width: 1vw !important;
         height: 1vw !important;
     }
+
 }
 
 @media only screen and (min-width: 768px) {
