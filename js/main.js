@@ -18,7 +18,7 @@ $(function () {
         };
 
         // Feature
-        if (scroll >= 100) {
+        if (scroll >= 150) {
 
             $("#featured").animate({
                 opacity: 1
@@ -29,7 +29,7 @@ $(function () {
         };
 
         // Modern
-        if (scroll >= 1400) {
+        if (scroll >= 1500) {
 
             $("#modern").animate({
                 opacity: 1

@@ -2,6 +2,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 html {
     width: auto;
     height: auto;
@@ -16,10 +25,6 @@ section {
     border-radius: 1.2vw;
 }
 
-.btn:hover {
-    
-}
-
 .btn-primary {
     background-color: #F3B063;
     transition: 0.5s;
@@ -27,7 +32,7 @@ section {
 
 .btn-primary:hover {
     background-color: #F3B063;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     transform: scale(1.1);
 }
 
@@ -49,7 +54,7 @@ section {
 .btn-secondary:hover {
     background-color: transparent;
     border: 1px solid #F3B063;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     transform: scale(1.1);
 }
 
@@ -85,22 +90,10 @@ section {
     color: #fafafa;
 }
 
-#featured, #modern {
-    opacity: 0;
-}
-
 .featured-icon {
     width: auto; 
     height: 6vw;
-}
-
-.featured-img {
-    filter: grayscale(1);
-    transition: 0.5s;
-}
-
-.featured-img:hover {
-    filter: grayscale(0);
+    cursor: pointer;
 }
 
 .icon-back {
@@ -148,6 +141,18 @@ section {
 
 @media only screen and (max-width: 576px) {
 
+    #services {
+        padding: 12vw 0;
+    }
+
+    #testimonial {
+        padding: 18vw 0;
+    }
+
+    #contact {
+        padding: 16vw 0;
+    }
+
     .navbar {
         z-index: 999;
         position: fixed;
@@ -165,6 +170,18 @@ section {
 }
 
 @media only screen and (min-width: 576px) {
+
+    #services {
+        padding: 12vw 0;
+    }
+
+    #testimonial {
+        padding: 14vw 0;
+    }
+
+    #contact {
+        padding: 14vw 0;
+    }
 
     .navbar {
         z-index: 999;
@@ -218,6 +235,18 @@ section {
 
 @media only screen and (min-width: 768px) {
 
+    #services {
+        padding: 11vw 0;
+    }
+
+    #testimonial {
+        padding: 12vw 0;
+    }
+
+    #contact {
+        padding: 12vw 0;
+    }
+
     .better-property-card {
         width: 64%;
         top: -15vw;
@@ -227,10 +256,35 @@ section {
     .user {
         width: 8vw;
     }
+
+    #featured, #modern {
+        opacity: 0;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+
+    #services {
+        padding: 8vw 0;
+    }
+
+    #testimonial {
+        padding: 10vw 0;
+    }
+
+    #contact {
+        padding: 10vw 0;
+    }
     
+    .featured-img {
+        filter: grayscale(1);
+        transition: 0.5s;
+    }
+    
+    .featured-img:hover {
+        filter: grayscale(0);
+    }
+
     .featured-icon {
         width: auto; 
         height: 2vw;
@@ -260,6 +314,18 @@ section {
 
 @media only screen and (min-width: 1200px) {
 
+    #services {
+        padding: 8vw 0;
+    }
+
+    #testimonial {
+        padding: 9vw 0;
+    }
+
+    #contact {
+        padding: 10vw 0;
+    }
+
     .better-property-card {
         z-index: 1;
         position: relative;
@@ -279,6 +345,18 @@ section {
     
     section {
         margin: 14vw 3vw;
+    }
+
+    #services {
+        padding: 9vw 0;
+    }
+
+    #testimonial {
+        padding: 10vw 0;
+    }
+
+    #contact {
+        padding: 11vw 0;
     }
 
     .better-property-card {
