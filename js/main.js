@@ -11,7 +11,7 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         // Navbar
-        if (scroll >= 10) {
+        if (scroll >= 20) {
             $("#nav").addClass("bg-navbar");
         } else {
             $("#nav").removeClass("bg-navbar");
